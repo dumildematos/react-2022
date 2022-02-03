@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Tweet } from "./components/Tweet";
+import { AppRoutes } from "./Routes";
 
 
 function App() {
@@ -19,12 +20,13 @@ function App() {
   
   return (
     <div>
-      {
+      <AppRoutes />
+      {/* {
         tweets.map((tweet, $index) => {
           return <Tweet key={$index} text={tweet} />
         })
       }
-      <button onClick={createTweet}>Adicionar</button>
+      <button onClick={createTweet}>Adicionar</button> */}
     </div>
   );
 }
